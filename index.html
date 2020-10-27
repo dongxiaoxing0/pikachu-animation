@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>会动的皮卡丘</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style id="styleTag"></style>
+    <link rel="stylesheet" href="/vendor/prism/prism.css">
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="code-wrapper">
+        <pre id="code"></pre>
+        <div class="actions">
+            <button data-speed="slow">慢速</button>
+            <button data-speed="normal">中速</button>
+            <button data-speed="fast">快速</button>
+        </div>
+    </div>
+
+    <div class="pikachu-wrapper">
         <div class="pikachu">
             <div class="nose"></div>
             <div class="eyes left"></div>
@@ -23,6 +34,10 @@
             </div>
         </div>
     </div>
+    <script src="/vendor/jquery-3.5.1.min.js"></script>
+    <script src="/vendor/prism/prism.js"></script>
+    <script src="/js/main.js"></script>
+
 </body>
 
 </html>
